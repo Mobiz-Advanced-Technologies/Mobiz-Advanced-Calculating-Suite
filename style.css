@@ -25,15 +25,16 @@ footer {
 }
 
 .window {
-  height: 0px;
-  width: 0px;
+  height: fit-content !important;
+  width: fit-content !important;
   display: none;
   animation: fadein;
   animation-duration: 0.1s;
+  position: absolute !important;
 }
 
 .header {
-  width: 600px;
+  width: 100% !important;
   height: fit-content;
   background-color: #1d1d1ddd;
   cursor: move;
@@ -53,6 +54,7 @@ footer {
 }
 
 .content iframe {
+  resize: both;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border: none;
 }
